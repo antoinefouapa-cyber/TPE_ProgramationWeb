@@ -1,0 +1,126 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Segoe UI', sans-serif;
+ }
+ 
+ body {
+     background-color: darkslategray;
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 20px;
+ }
+ 
+ .conteneur {
+     background: white;
+     padding: 30px;
+     border-radius: 16px;
+     box-shadow: 0 10px 30px rgba(105, 102, 102, 0.2);
+     width: 100%;
+     max-width: 400px;
+ }
+ 
+ h1 {
+     text-align: center;
+     color: #333;
+     margin-bottom: 25px;
+     font-size: 1.8rem;
+ }
+ 
+ .champSaisir {
+     margin-bottom: 20px;
+ }
+ 
+ label {
+     display: block;
+     margin-bottom: 8px;
+     color: #555;
+     font-weight: 600;
+ }
+ 
+ input[type="date"] {
+     width: 100%;
+     padding: 12px;
+     border: 2px solid #ddd;
+     border-radius: 8px;
+     font-size: 1rem;
+     outline: none;
+     transition: border 0.3s;
+ }
+ 
+ input[type="date"]:focus {
+     border-color: #667eea;
+ }
+ 
+ button {
+     width: 100%;
+     padding: 14px;
+     background: #667eea;
+     color: white;
+     border: none;
+     border-radius: 8px;
+     font-size: 1.1rem;
+     font-weight: 600;
+     cursor: pointer;
+     transition: background 0.3s;
+ }
+ 
+ button:hover {
+     background: #5a6fd8;
+ }
+ 
+ .resultat {
+     margin-top: 25px;
+     padding: 20px;
+     background: #f8f9ff;
+     border-radius: 8px;
+     border-left: 4px solid #667eea;
+     display: none;
+ }
+ 
+ .resultat.vue {
+     display: block;
+ }
+ 
+ .resultat h3 {
+     color: #333;
+     margin-bottom: 15px;
+     text-align: center;
+ }
+ 
+ .bloc {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 10px;
+     text-align: center;
+ }
+ 
+ .boxAge {
+     background: white;
+     padding: 12px;
+     border-radius: 8px;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .boxAge.valeur {
+     font-size: 1.8rem;
+     font-weight: bold;
+     color: #667eea;
+ }
+ 
+ .boxAge.indice {
+     font-size: 0.8rem;
+     color: #666;
+     margin-top: 4px;
+ }
+ 
+ .erreur {
+     color: #e74c3c;
+     text-align: center;
+     margin-top: 15px;
+     font-weight: 500;
+     display: none;
+ }

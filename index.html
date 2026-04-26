@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="conteneur">
+        <h1>Calculateur d'âge</h1>
+
+        <div class="champSaisir">
+            <label for="date">Date de naissance :</label>
+            <input type="date" id="aniv">
+        </div>
+
+        <button onclick="calculerAge()">Calculer mon âge</button>
+
+        <div class="erreur" id="erreur">Veuillez entrer une date valide</div>
+
+        <div class="resultat" id="resultat">
+            <h3>Vous avez :</h3>
+            <div class="bloc">
+                <div class="boxAge">
+                    <div class="valeur" id="annee">0</div>
+                    <div class="indice">Années</div>
+                </div>
+                <div class="boxAge">
+                    <div class="valeur" id="mois">0</div>
+                    <div class="indice">Mois</div>
+                </div>
+                <div class="boxAge">
+                    <div class="valeur" id="jours">0</div>
+                    <div class="indice">Jours</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
